@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+scripts_dir=$(dirname $(realpath $0))
+
+shutdown=''
+reboot=''
+logout=''
+lock=''
+
+response=$(\
+  echo "$shutdown;$reboot;$logout;$lock" | \
+  rofi -dmenu \
+       -sep ';' \
+       -selected-row 3 \
+       -theme "$scripts_dir/_poweroff.rasi" \
+)
+
+if [ "$?" -ne 0 ]; then
+  echo "Cancel"
+  exit 0
+fi
+
+case "$response" in
+  "$shutdown")
+    echo "Shutdown"
+    systemctl poweroff
+    ;;
+
+  "$reboot")
+    echo "Reboot"
+    systemctl reboot
+    ;;
+  
+  "$logout")
+    echo "Logout"
+    swaymsg exit
+    ;;
+  
+  "$lock")
+    echo "Lock"
+    swaylock --daemonize
+    ;;
+
+  *) exit 1 ;;
+esac

@@ -1,0 +1,121 @@
+* {
+	border: none;
+	border-radius: 0;
+  font-family: Cantarell;
+  font-weight: bold;
+	font-size: 14px;
+	min-height: 24px;
+}
+
+window#waybar {
+	background: #011028;
+}
+
+#window {
+  margin-left: 8px;
+  color: #CDE8F4;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#workspaces {
+	margin: 4px 4px 4px 10px;
+  padding: 2px 6px;
+  background: #CDE8F4;
+  border-radius: 8px;
+  border-bottom: 3px solid #89CAE6;
+}
+
+#workspaces button {
+  margin-left: 2px;
+  color: #1D6484;
+	font-size: 16px;
+  border-radius: 8px;
+}
+
+#workspaces button.focused {
+  background: #1D6484;
+	color: #CDE8F4;
+}
+
+#workspaces button:hover {
+  border: none;
+  text-shadow: none;
+  box-shadow: none;
+  font-size: 18px;
+  background: #123F54;
+  border-radius: 8px;
+	color: #CDE8F4;
+}
+
+#clock {
+  margin: 4px 16px;
+  color: #CDE8F4;
+  font-size: 16px;
+}
+
+#memory {
+  margin: 4px 0 4px 4px;
+	padding: 0 8px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border-bottom: 3px solid #164C64;
+  color: #CDE8F4;
+	background: #1D6484;
+}
+
+#cpu {
+  margin: 4px 0;
+	border-bottom: 3px solid #164C64;
+  color: #CDE8F4;
+	background: #1D6484;
+}
+
+#temperature {
+  margin: 4px 4px 4px 0;
+	padding: 0 8px;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border-bottom: 3px solid #164C64;
+  color: #CDE8F4;
+	background: #1D6484;
+}
+
+#battery {
+  margin: 4px;
+	padding: 0 8px;
+	border-radius: 8px;
+	border-bottom: 3px solid #33998D;
+  color: #07362E;
+	background: #1BC5A9;
+}
+
+#battery.warning {
+	border-bottom: 3px solid #DE6F3F;
+  color: #57250F;
+	background: #E6906B;
+}
+
+#battery.critical {
+	border-bottom: 3px solid #F3746B;
+  color: #F9C0B4;
+	background: #EE3C2F;
+}
+
+#network {
+  margin: 4px;
+	padding: 0 8px;
+	border-radius: 8px;
+	border-bottom: 3px solid #DEC102;
+  color: #504601;
+	background: #FEEE84;
+}
+
+#custom-power {
+  margin: 4px 10px 4px 4px;
+	padding: 0 16px;
+	border-radius: 8px;
+	border-bottom: 3px solid #E01515;
+  color: #4B0707;
+	background: #EE4444;
+}
