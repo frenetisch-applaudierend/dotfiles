@@ -15,3 +15,6 @@ display-inlay-hints = true
 
 [editor.indent-guides]
 render = true
+
+[keys.normal]
+C-minus = ":toggle lsp.display-inlay-hints"
