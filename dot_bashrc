@@ -36,3 +36,5 @@ then
   shopt -q login_shell && LOGIN_OPTION='--login' || LOGIN_OPTION=''
   exec fish $LOGIN_OPTION
 fi
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
