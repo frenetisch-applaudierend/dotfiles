@@ -1,0 +1,113 @@
+/**
+ * Edited by: Markus Gasser
+ * User: Alfonso
+ * Copyright: Markus Gasser
+ */
+
+/* global settings and color variables */
+* {
+  window-bg: #011028;
+  
+  main-bg: #1D6484;
+  main-border: #164C64;
+
+  entry-text: #CDE8F4;
+  
+  element-text-normal: #CDE8F4;
+
+  element-bg-selected: #FEEE84;
+  element-text-selected: #504601;
+  element-shadow-selected: #DEC102;
+
+  transparent: #00000000;
+  foreground: @main-bg;
+
+  spacing: 0px;
+  padding: 0px;
+  line-style: "none";
+}
+
+window {
+  background: @window-bg;
+  border-radius: 8px;
+
+  width: 600px;
+  height: 500px;
+}
+
+mainbox {
+  background-color: @window-bg;
+}
+
+inputbar {
+  margin: 8px;
+  padding: 8px;
+  spacing: 8px;
+  background-color: @main-bg;
+  border-radius: 8px;
+  border: 2px;
+  border-color: @main-border;
+}
+
+entry, prompt, case-indicator {
+  text-color: @entry-text;
+  background-color: @transparent;
+}
+
+prompt {
+  font: "Cantarell Bold 16";
+}
+
+entry {
+  font: "Cantarell Regular 16";
+}
+
+listview {
+  margin: 8px;
+  padding: 8px;
+  spacing: 4px;
+  border-radius: 8px;
+
+  background-color: @main-bg;
+  border-color: @main-border;
+
+  border: 2px;
+}
+
+element {
+  margin: 0px 0px 0px 8px;
+  spacing: 16px;
+  background-color: @main-bg;
+  children: [ element-icon, element-text ];
+}
+
+element selected {
+}
+
+element-icon {
+  background-color: inherit;
+  text-color: inherit;
+  foreground-color: inherit;
+}
+
+element-text {
+  font: "Cantarell Regular 16";
+
+  padding: 5px 8px 11px 8px;
+  border-radius: 8px;
+}
+
+element-text normal {
+  background-color: inherit;
+}
+
+element-text normal {
+  text-color: @element-text-normal;
+}
+
+element-text selected {
+  text-color: @element-text-selected;
+  background-color: @element-bg-selected;
+  border: 0px 0px 3px 0px;
+  border-color: @element-shadow-selected;
+}
