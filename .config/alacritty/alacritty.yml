@@ -1,0 +1,40 @@
+import:
+  - ~/.config/alacritty/catppuccin/catppuccin-macchiato.yml
+
+font:
+  normal:
+    family: MesloLGS NF
+    style: Regular
+
+  bold:
+    family: MesloLGS NF
+    style: Bold
+
+  italic:
+    family: MesloLGS NF
+    style: Italic
+
+  bold_italic:
+    family: MesloLGS NF
+    style: Bold Italic
+
+  size: 11
+
+cursor:
+  style: Beam
+
+window:
+  padding:
+    x: 4
+    y: 4
+
+key_bindings:
+    # (Windows, Linux, and BSD only)
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
