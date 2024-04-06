@@ -1,0 +1,54 @@
+* {
+    background-color: transparent;
+    font: "MesloLGS NF Bold 88";
+}
+
+window {
+    fullscreen: true;
+    background-image: url("/var/home/alfonso/.config/backgrounds/river_blurred.jpg");
+
+    children: [ horibox ];
+}
+
+#horibox {
+  background: transparent;
+  children: [ listview ];
+}
+
+#listview {
+  spacing: 96px;
+  layout: horizontal;
+  margin: 300px 162px;
+  padding: 40px 20px;
+
+  border-radius: 16px;
+  background-color: #011028AA;
+}
+
+element {
+  padding: 30px;
+  width: 196px;
+
+  border-radius: 16px;
+  border: 0 0 8px 0;
+
+  children: [ element-text ];
+}
+
+element normal {
+  background-color: #1D6484;
+  border-color: #164C64;
+  text-color: #CDE8F4;
+}
+
+element selected {
+  background-color: #CDE8F4;
+  border-color: #89CAE6;
+  text-color: #1D6484;
+}
+
+element-text {
+    text-color: inherit;
+	horizontal-align: 0.5;
+	vertical-align: 0.5;
+}
