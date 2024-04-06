@@ -1,0 +1,54 @@
+{
+    "layer": "top",
+
+    "ipc": true,
+    "modules-left": ["sway/workspaces", "sway/window"],
+    "modules-center": ["clock"],
+    "modules-right": ["memory", "cpu", "temperature", "network", "battery", "custom/power"],
+    
+    "sway/window": {
+        "max-length": 50
+    },
+
+    "memory": {
+        "format": "  {used} GiB ({percentage}%)"
+    },
+    
+    "cpu": {
+        "format": "  {avg_frequency} Ghz",
+        "tooltip": false
+    },
+    
+    "temperature": {
+        "critical-threshold": 80,
+        "format": "{icon}  {temperatureC}°C",
+        "format-icons": ["", "", ""]
+    },
+
+    "battery": {
+        "states": {
+            "warning": 40,
+            "critical": 15
+        },
+        "format": "{icon}  {capacity}%",
+        "format-icons": ["", "", "", "", ""]
+    },
+
+    "network": {
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "Disconnected ⚠",
+        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+    },
+    
+    "clock": {
+        "format": "{:%a, %d. %b %H:%M}"
+    },
+
+    "custom/power": {
+      "format": "",
+      "on-click": "exec ~/.config/sway/scripts/poweroff.menu"
+    }
+}
