@@ -27,6 +27,7 @@ require('lazy').setup {
   require 'plugins.comment',
   require 'plugins.conform',
   require 'plugins.gitsigns',
+  require 'plugins.indentline',
   require 'plugins.lspconfig',
   require 'plugins.mini',
   require 'plugins.nvim-cmp',
