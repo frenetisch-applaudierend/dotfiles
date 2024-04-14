@@ -1,8 +1,7 @@
 lastupdatecheck: 0
 recentrepos:
-- /var/home/alfonso/.config/nvim
+- /var/home/alfonso/Development/dotfile-manager
 - /var/home/alfonso/Development/app-werkstatt-todo
-- /var/home/alfonso/.config/nvim/lua/user
 - /var/home/alfonso/Development/zinal
 - /var/home/alfonso/Development/problem-details-rs
 - /var/home/alfonso/Development/tokio-axum
